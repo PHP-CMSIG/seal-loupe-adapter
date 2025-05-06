@@ -8,7 +8,7 @@
     "packages": [
         {
             "name": "cmsig/seal",
-            "version": "0.8.0",
+            "version": "0.8.x-dev",
             "dist": {
                 "type": "path",
                 "url": "./../seal",
@@ -1699,12 +1699,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "36b3925046cf70ddb434566165c5fe01389a993f"
+                "reference": "b7137d1a5be9f129daf5c3520e7b50f187194ded"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/36b3925046cf70ddb434566165c5fe01389a993f",
-                "reference": "36b3925046cf70ddb434566165c5fe01389a993f",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/b7137d1a5be9f129daf5c3520e7b50f187194ded",
+                "reference": "b7137d1a5be9f129daf5c3520e7b50f187194ded",
                 "shasum": ""
             },
             "require": {
@@ -1749,7 +1749,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-05T16:02:47+00:00"
+            "time": "2025-05-06T09:57:30+00:00"
         },
         {
             "name": "phpstan/phpstan-phpunit",
