@@ -17,6 +17,9 @@ use CmsIg\Seal\Adapter\SearcherInterface;
 use CmsIg\Seal\Marshaller\FlattenMarshaller;
 use CmsIg\Seal\Schema\Index;
 use CmsIg\Seal\Search\Condition;
+use CmsIg\Seal\Search\Facet\AbstractFacet;
+use CmsIg\Seal\Search\Facet\CountFacet;
+use CmsIg\Seal\Search\Facet\MinMaxFacet;
 use CmsIg\Seal\Search\Result;
 use CmsIg\Seal\Search\Search;
 use Loupe\Loupe\SearchParameters;
@@ -97,6 +100,8 @@ final class LoupeSearcher implements SearcherInterface
             $searchParameters = $searchParameters->withDistinct($search->distinct);
         }
 
+        $searchParameters = $searchParameters->withFacets(\array_map(fn (AbstractFacet $facet) => $facet->field, $search->facets));
+
         if ([] !== $search->highlightFields) {
             $searchParameters = $searchParameters->withAttributesToHighlight(
                 $search->highlightFields,
@@ -119,6 +124,7 @@ final class LoupeSearcher implements SearcherInterface
         return new Result(
             $this->hitsToDocuments($search->index, $result->getHits(), $search->highlightFields, $search->highlightPreTag),
             $result->getTotalHits(),
+            $this->formatFacets($result->getFacetStats(), $result->getFacetDistribution(), $search->facets),
         );
     }
 
@@ -219,5 +225,30 @@ final class LoupeSearcher implements SearcherInterface
         }
 
         return \implode($conjunctive ? ' AND ' : ' OR ', $filters);
+    }
+
+    /**
+     * @param array<string, array<string, float>> $facetStats
+     * @param array<string, array<string, int>> $facetDistribution
+     * @param array<AbstractFacet> $facets
+     *
+     * @return array<string, mixed>
+     */
+    private function formatFacets(array $facetStats, array $facetDistribution, array $facets): array
+    {
+        $formatted = [];
+
+        foreach ($facets as $facet) {
+            if ($facet instanceof MinMaxFacet && isset($facetStats[$facet->field])) {
+                $formatted[$facet->field]['min'] = $facetStats[$facet->field]['min'];
+                $formatted[$facet->field]['max'] = $facetStats[$facet->field]['max'];
+                continue;
+            }
+            if ($facet instanceof CountFacet && isset($facetDistribution[$facet->field])) {
+                $formatted[$facet->field]['count'] = $facetDistribution[$facet->field];
+            }
+        }
+
+        return $formatted;
     }
 }

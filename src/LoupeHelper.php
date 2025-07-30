@@ -141,6 +141,7 @@ final class LoupeHelper
         $filterableFields = \array_unique(\array_merge(
             $index->filterableFields,
             $index->distinctFields, // to use distinct the field also need to be filterable
+            $index->facetFields,
         ));
 
         return Configuration::create()
