@@ -8,7 +8,7 @@
     "packages": [
         {
             "name": "cmsig/seal",
-            "version": "0.12.0",
+            "version": "0.12.x-dev",
             "dist": {
                 "type": "path",
                 "url": "./../seal",
@@ -109,12 +109,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "57c983fd297cd0aca896dfcbd9d3b21d7e7ec538"
+                "reference": "af031490e2bd014ba6cbcda1090d08ff475c3f49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/57c983fd297cd0aca896dfcbd9d3b21d7e7ec538",
-                "reference": "57c983fd297cd0aca896dfcbd9d3b21d7e7ec538",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/af031490e2bd014ba6cbcda1090d08ff475c3f49",
+                "reference": "af031490e2bd014ba6cbcda1090d08ff475c3f49",
                 "shasum": ""
             },
             "require": {
@@ -124,7 +124,7 @@
                 "psr/log": "^1|^2|^3"
             },
             "require-dev": {
-                "doctrine/coding-standard": "13.0.0",
+                "doctrine/coding-standard": "13.0.1",
                 "fig/log-test": "^1",
                 "jetbrains/phpstorm-stubs": "2023.2",
                 "phpstan/phpstan": "2.1.22",
@@ -207,7 +207,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-08-12T21:08:00+00:00"
+            "time": "2025-08-17T17:09:37+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -391,16 +391,16 @@
         },
         {
             "name": "loupe/loupe",
-            "version": "0.12.11",
+            "version": "0.12.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/loupe-php/loupe.git",
-                "reference": "f6473ede33733582890f8b256ba438e3a74dbd40"
+                "reference": "da974a53f9ab7d3ba99241b638450f0aa35b2d26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/loupe-php/loupe/zipball/f6473ede33733582890f8b256ba438e3a74dbd40",
-                "reference": "f6473ede33733582890f8b256ba438e3a74dbd40",
+                "url": "https://api.github.com/repos/loupe-php/loupe/zipball/da974a53f9ab7d3ba99241b638450f0aa35b2d26",
+                "reference": "da974a53f9ab7d3ba99241b638450f0aa35b2d26",
                 "shasum": ""
             },
             "require": {
@@ -443,7 +443,7 @@
             "description": "A full text search engine with tokenization, stemming, typo tolerance, filters and geo support based on only PHP and SQLite",
             "support": {
                 "issues": "https://github.com/loupe-php/loupe/issues",
-                "source": "https://github.com/loupe-php/loupe/tree/0.12.11"
+                "source": "https://github.com/loupe-php/loupe/tree/0.12.12"
             },
             "funding": [
                 {
@@ -451,7 +451,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-07-28T14:50:09+00:00"
+            "time": "2025-08-05T12:20:09+00:00"
         },
         {
             "name": "loupe/matcher",
@@ -1120,16 +1120,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v5.6.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "221b0d0fdf1369c71047ad1d18bb5880017bbc56"
+                "reference": "f103601b29efebd7ff4a1ca7b3eeea9e3336a2a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/221b0d0fdf1369c71047ad1d18bb5880017bbc56",
-                "reference": "221b0d0fdf1369c71047ad1d18bb5880017bbc56",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/f103601b29efebd7ff4a1ca7b3eeea9e3336a2a2",
+                "reference": "f103601b29efebd7ff4a1ca7b3eeea9e3336a2a2",
                 "shasum": ""
             },
             "require": {
@@ -1142,13 +1142,14 @@
                 "ircmaxell/php-yacc": "^0.0.7",
                 "phpunit/phpunit": "^9.0"
             },
+            "default-branch": true,
             "bin": [
                 "bin/php-parse"
             ],
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.0-dev"
+                    "dev-master": "5.x-dev"
                 }
             },
             "autoload": {
@@ -1172,9 +1173,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v5.6.0"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v5.6.1"
             },
-            "time": "2025-07-27T20:03:57+00:00"
+            "time": "2025-08-13T20:13:15+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -1297,16 +1298,16 @@
         },
         {
             "name": "php-cs-fixer/shim",
-            "version": "v3.85.1",
+            "version": "v3.86.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/shim.git",
-                "reference": "00a3dad9505df669736aaa8c017e6cc74e46075a"
+                "reference": "b43770ec215a30afff187ac273da6b43575c0ae3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/shim/zipball/00a3dad9505df669736aaa8c017e6cc74e46075a",
-                "reference": "00a3dad9505df669736aaa8c017e6cc74e46075a",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/shim/zipball/b43770ec215a30afff187ac273da6b43575c0ae3",
+                "reference": "b43770ec215a30afff187ac273da6b43575c0ae3",
                 "shasum": ""
             },
             "require": {
@@ -1343,9 +1344,9 @@
             "description": "A tool to automatically fix PHP code style",
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/shim/issues",
-                "source": "https://github.com/PHP-CS-Fixer/shim/tree/v3.85.1"
+                "source": "https://github.com/PHP-CS-Fixer/shim/tree/v3.86.0"
             },
-            "time": "2025-07-29T22:23:17+00:00"
+            "time": "2025-08-13T22:37:38+00:00"
         },
         {
             "name": "phpstan/extension-installer",
@@ -1835,12 +1836,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "24dda24cf0123f75c29831b808cab5a0c2c96529"
+                "reference": "4b4ef24b22aff369af098fdf31e853d24d446ec9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/24dda24cf0123f75c29831b808cab5a0c2c96529",
-                "reference": "24dda24cf0123f75c29831b808cab5a0c2c96529",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/4b4ef24b22aff369af098fdf31e853d24d446ec9",
+                "reference": "4b4ef24b22aff369af098fdf31e853d24d446ec9",
                 "shasum": ""
             },
             "require": {
@@ -1936,7 +1937,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-08-13T06:52:37+00:00"
+            "time": "2025-08-17T06:08:40+00:00"
         },
         {
             "name": "rector/rector",
