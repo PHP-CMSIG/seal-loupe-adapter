@@ -109,12 +109,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "d8cf0d8190183451cc01c0faeae9fcd1a76e2de2"
+                "reference": "d31bcf0272fe2f579ac328f1e5b8bc7af8ab2410"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/d8cf0d8190183451cc01c0faeae9fcd1a76e2de2",
-                "reference": "d8cf0d8190183451cc01c0faeae9fcd1a76e2de2",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/d31bcf0272fe2f579ac328f1e5b8bc7af8ab2410",
+                "reference": "d31bcf0272fe2f579ac328f1e5b8bc7af8ab2410",
                 "shasum": ""
             },
             "require": {
@@ -207,7 +207,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-06-07T23:39:01+00:00"
+            "time": "2026-07-26T15:20:21+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -414,16 +414,16 @@
         },
         {
             "name": "loupe/loupe",
-            "version": "0.13.17",
+            "version": "0.13.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/loupe-php/loupe.git",
-                "reference": "e1b3c963bea18f94827f8aeb82f16d80a4efe9e9"
+                "reference": "e925e4c3b457aba9405b8647aa50e8a486460f2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/loupe-php/loupe/zipball/e1b3c963bea18f94827f8aeb82f16d80a4efe9e9",
-                "reference": "e1b3c963bea18f94827f8aeb82f16d80a4efe9e9",
+                "url": "https://api.github.com/repos/loupe-php/loupe/zipball/e925e4c3b457aba9405b8647aa50e8a486460f2a",
+                "reference": "e925e4c3b457aba9405b8647aa50e8a486460f2a",
                 "shasum": ""
             },
             "require": {
@@ -437,18 +437,19 @@
                 "mjaschen/phpgeo": "^5.0 || ^6.0",
                 "nitotm/efficient-language-detector": "^3.1",
                 "php": "^8.1",
+                "psr/cache": "^2.0 || ^3.0",
                 "psr/log": "^2.0 || ^3.0",
-                "toflar/state-set-index": "^3.0",
+                "toflar/state-set-index": "^3.3",
                 "wamania/php-stemmer": "^4.0"
             },
             "require-dev": {
-                "phpstan/phpstan": "^2.1.31",
+                "phpbench/phpbench": "^1.2",
                 "phpunit/phpunit": "^10.5.58",
                 "symfony/filesystem": "^7.3.2",
                 "symfony/finder": "^7.3.5",
                 "symfony/process": "^7.3.4",
                 "symfony/var-dumper": "^7.3.5",
-                "symplify/easy-coding-standard": "^12.6.2"
+                "terminal42/code-quality-tools": "dev-main"
             },
             "type": "library",
             "autoload": {
@@ -469,7 +470,7 @@
             "description": "A full text search engine with tokenization, stemming, typo tolerance, filters and geo support based on only PHP and SQLite",
             "support": {
                 "issues": "https://github.com/loupe-php/loupe/issues",
-                "source": "https://github.com/loupe-php/loupe/tree/0.13.17"
+                "source": "https://github.com/loupe-php/loupe/tree/0.13.23"
             },
             "funding": [
                 {
@@ -477,7 +478,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-05-20T09:45:39+00:00"
+            "time": "2026-07-19T15:45:12+00:00"
         },
         {
             "name": "loupe/matcher",
@@ -1085,16 +1086,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "50f0d9c9d0e3cff1163c959c50aaaaa4a7115f08"
+                "reference": "fbd47f7ebcbb450138d92642a0a53b72a5285dda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/50f0d9c9d0e3cff1163c959c50aaaaa4a7115f08",
-                "reference": "50f0d9c9d0e3cff1163c959c50aaaaa4a7115f08",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/fbd47f7ebcbb450138d92642a0a53b72a5285dda",
+                "reference": "fbd47f7ebcbb450138d92642a0a53b72a5285dda",
                 "shasum": ""
             },
             "require": {
-                "ext-ctype": "*",
                 "ext-json": "*",
                 "ext-tokenizer": "*",
                 "php": ">=7.4"
@@ -1136,7 +1136,7 @@
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
                 "source": "https://github.com/nikic/PHP-Parser/tree/master"
             },
-            "time": "2026-02-26T13:20:22+00:00"
+            "time": "2026-07-11T16:03:13+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -1259,16 +1259,16 @@
         },
         {
             "name": "php-cs-fixer/shim",
-            "version": "v3.95.4",
+            "version": "v3.95.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/shim.git",
-                "reference": "886a7adcb685e30a9dadb484236621b011b267b9"
+                "reference": "fe9462e0b3e59b33ee076f6eda626b474b8cf363"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/shim/zipball/886a7adcb685e30a9dadb484236621b011b267b9",
-                "reference": "886a7adcb685e30a9dadb484236621b011b267b9",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/shim/zipball/fe9462e0b3e59b33ee076f6eda626b474b8cf363",
+                "reference": "fe9462e0b3e59b33ee076f6eda626b474b8cf363",
                 "shasum": ""
             },
             "require": {
@@ -1305,9 +1305,9 @@
             "description": "A tool to automatically fix PHP code style",
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/shim/issues",
-                "source": "https://github.com/PHP-CS-Fixer/shim/tree/v3.95.4"
+                "source": "https://github.com/PHP-CS-Fixer/shim/tree/v3.95.17"
             },
-            "time": "2026-06-03T18:03:14+00:00"
+            "time": "2026-07-24T13:55:04+00:00"
         },
         {
             "name": "phpstan/extension-installer",
@@ -1363,8 +1363,8 @@
             "version": "2.2.x-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e17e04976d94eb47a7333cd950131ab22331ffc8",
-                "reference": "e17e04976d94eb47a7333cd950131ab22331ffc8",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e6d7b5bd314f434341b3e4c9b560265069fa33b1",
+                "reference": "e6d7b5bd314f434341b3e4c9b560265069fa33b1",
                 "shasum": ""
             },
             "require": {
@@ -1421,7 +1421,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-06-07T16:13:01+00:00"
+            "time": "2026-07-27T11:35:48+00:00"
         },
         {
             "name": "phpstan/phpstan-phpunit",
@@ -1429,17 +1429,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-phpunit.git",
-                "reference": "4a8e26fdfc14cdead6a1dc044dc5373551ce14af"
+                "reference": "ad72cfab6bb0b04e128b9581393ad1750cb882fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-phpunit/zipball/4a8e26fdfc14cdead6a1dc044dc5373551ce14af",
-                "reference": "4a8e26fdfc14cdead6a1dc044dc5373551ce14af",
+                "url": "https://api.github.com/repos/phpstan/phpstan-phpunit/zipball/ad72cfab6bb0b04e128b9581393ad1750cb882fd",
+                "reference": "ad72cfab6bb0b04e128b9581393ad1750cb882fd",
                 "shasum": ""
             },
             "require": {
+                "phar-io/version": "^3.2",
                 "php": "^7.4 || ^8.0",
-                "phpstan/phpstan": "^2.1.48"
+                "phpstan/phpstan": "^2.2.6"
             },
             "conflict": {
                 "phpunit/phpunit": "<7.0"
@@ -1479,7 +1480,7 @@
                 "issues": "https://github.com/phpstan/phpstan-phpunit/issues",
                 "source": "https://github.com/phpstan/phpstan-phpunit/tree/2.0.x"
             },
-            "time": "2026-06-08T05:49:31+00:00"
+            "time": "2026-07-27T04:58:22+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -1808,20 +1809,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "bd2c636dd77eb00ebcf2b42a30b8d80079dfb094"
+                "reference": "8e86ffaede8e76e013033e096cdc8ab07160593d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/bd2c636dd77eb00ebcf2b42a30b8d80079dfb094",
-                "reference": "bd2c636dd77eb00ebcf2b42a30b8d80079dfb094",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/8e86ffaede8e76e013033e096cdc8ab07160593d",
+                "reference": "8e86ffaede8e76e013033e096cdc8ab07160593d",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
+                "ext-filter": "*",
                 "ext-json": "*",
                 "ext-libxml": "*",
                 "ext-mbstring": "*",
-                "ext-xml": "*",
                 "ext-xmlwriter": "*",
                 "myclabs/deep-copy": "^1.13.4",
                 "phar-io/manifest": "^2.0.4",
@@ -1893,25 +1894,25 @@
                     "type": "other"
                 }
             ],
-            "time": "2026-06-07T08:26:21+00:00"
+            "time": "2026-07-24T12:52:16+00:00"
         },
         {
             "name": "rector/rector",
-            "version": "2.4.5",
+            "version": "2.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "cbd86024be5014d3c14d9f0b3f7aae8ecbffd62c"
+                "reference": "861c77fd2a6d45317a401f4e0b617f947e8b6f96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/cbd86024be5014d3c14d9f0b3f7aae8ecbffd62c",
-                "reference": "cbd86024be5014d3c14d9f0b3f7aae8ecbffd62c",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/861c77fd2a6d45317a401f4e0b617f947e8b6f96",
+                "reference": "861c77fd2a6d45317a401f4e0b617f947e8b6f96",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4|^8.0",
-                "phpstan/phpstan": "^2.1.56"
+                "phpstan/phpstan": "^2.2.6"
             },
             "conflict": {
                 "rector/rector-doctrine": "*",
@@ -1945,7 +1946,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/2.4.5"
+                "source": "https://github.com/rectorphp/rector/tree/2.5.8"
             },
             "funding": [
                 {
@@ -1953,7 +1954,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-05-26T21:03:22+00:00"
+            "time": "2026-07-27T06:19:16+00:00"
         },
         {
             "name": "sebastian/cli-parser",
