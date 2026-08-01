@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db4073429aba73bab54ce688006b4c16",
+    "content-hash": "7d7dd1134f5ca49bcd9daffa94b0ec1c",
     "packages": [
         {
             "name": "cmsig/seal",
@@ -414,26 +414,26 @@
         },
         {
             "name": "loupe/loupe",
-            "version": "0.13.23",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/loupe-php/loupe.git",
-                "reference": "e925e4c3b457aba9405b8647aa50e8a486460f2a"
+                "reference": "06872e08eac9ddebcb99161482c64a32546a6311"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/loupe-php/loupe/zipball/e925e4c3b457aba9405b8647aa50e8a486460f2a",
-                "reference": "e925e4c3b457aba9405b8647aa50e8a486460f2a",
+                "url": "https://api.github.com/repos/loupe-php/loupe/zipball/06872e08eac9ddebcb99161482c64a32546a6311",
+                "reference": "06872e08eac9ddebcb99161482c64a32546a6311",
                 "shasum": ""
             },
             "require": {
                 "doctrine/dbal": "^3.10.2 || ^4.0",
                 "doctrine/lexer": "^2.0 || ^3.0",
-                "ext-intl": "*",
                 "ext-mbstring": "*",
+                "ext-pdo": "*",
                 "ext-pdo_sqlite": "*",
                 "lib-pdo_sqlite-sqlite": ">= 3.35.0",
-                "loupe/matcher": "^0.2.3",
+                "loupe/matcher": "^0.3.2",
                 "mjaschen/phpgeo": "^5.0 || ^6.0",
                 "nitotm/efficient-language-detector": "^3.1",
                 "php": "^8.1",
@@ -445,10 +445,9 @@
             "require-dev": {
                 "phpbench/phpbench": "^1.2",
                 "phpunit/phpunit": "^10.5.58",
-                "symfony/filesystem": "^7.3.2",
-                "symfony/finder": "^7.3.5",
-                "symfony/process": "^7.3.4",
-                "symfony/var-dumper": "^7.3.5",
+                "symfony/console": "^7.4",
+                "symfony/filesystem": "^7.4",
+                "symfony/process": "^7.4",
                 "terminal42/code-quality-tools": "dev-main"
             },
             "type": "library",
@@ -470,7 +469,7 @@
             "description": "A full text search engine with tokenization, stemming, typo tolerance, filters and geo support based on only PHP and SQLite",
             "support": {
                 "issues": "https://github.com/loupe-php/loupe/issues",
-                "source": "https://github.com/loupe-php/loupe/tree/0.13.23"
+                "source": "https://github.com/loupe-php/loupe/tree/1.0.1"
             },
             "funding": [
                 {
@@ -478,32 +477,36 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-07-19T15:45:12+00:00"
+            "time": "2026-07-30T09:33:17+00:00"
         },
         {
             "name": "loupe/matcher",
-            "version": "0.2.4",
+            "version": "0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/loupe-php/matcher.git",
-                "reference": "7ee82fcd3f952d00126f4ac8e906e08b8e10d596"
+                "reference": "8fe4aa1c30088ff053d37498fcca28840e19c6f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/loupe-php/matcher/zipball/7ee82fcd3f952d00126f4ac8e906e08b8e10d596",
-                "reference": "7ee82fcd3f952d00126f4ac8e906e08b8e10d596",
+                "url": "https://api.github.com/repos/loupe-php/matcher/zipball/8fe4aa1c30088ff053d37498fcca28840e19c6f3",
+                "reference": "8fe4aa1c30088ff053d37498fcca28840e19c6f3",
                 "shasum": ""
             },
             "require": {
                 "ext-intl": "*",
                 "ext-mbstring": "*",
-                "php": "^8.1"
+                "php": "^8.1",
+                "toflar/fast-set": "^1.0"
             },
             "require-dev": {
-                "phpstan/phpstan": "^2.0",
-                "phpunit/phpunit": "^10.5",
-                "symfony/finder": "^6.2",
-                "symplify/easy-coding-standard": "^12.5"
+                "ext-zlib": "*",
+                "phpbench/phpbench": "^1.2",
+                "phpunit/phpunit": "^10.5 || ^11.5.46",
+                "symfony/console": "^6.4 || ^7.4 || ^8.0",
+                "symfony/filesystem": "^6.4 || ^7.4 || ^8.0",
+                "symfony/http-client": "^6.4 || ^7.4 || ^8.0",
+                "terminal42/code-quality-tools": "dev-main"
             },
             "type": "library",
             "autoload": {
@@ -525,10 +528,20 @@
                     "email": "daun@daun.ltd"
                 }
             ],
-            "description": "Highlight and crop around search terms",
+            "description": "Tokenize, decompose, highlight and crop around text and search terms",
+            "keywords": [
+                "crop",
+                "decompose",
+                "decomposition",
+                "dictionary",
+                "highlight",
+                "search",
+                "tokenize",
+                "tokenizer"
+            ],
             "support": {
                 "issues": "https://github.com/loupe-php/matcher/issues",
-                "source": "https://github.com/loupe-php/matcher/tree/0.2.4"
+                "source": "https://github.com/loupe-php/matcher/tree/0.3.2"
             },
             "funding": [
                 {
@@ -536,7 +549,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-05-07T15:14:56+00:00"
+            "time": "2026-07-30T08:14:15+00:00"
         },
         {
             "name": "mjaschen/phpgeo",
@@ -922,6 +935,59 @@
             "time": "2026-06-05T06:23:12+00:00"
         },
         {
+            "name": "toflar/fast-set",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Toflar/FastSet.git",
+                "reference": "e869a114f277ada274f9a8971eb05020e5ee94d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Toflar/FastSet/zipball/e869a114f277ada274f9a8971eb05020e5ee94d8",
+                "reference": "e869a114f277ada274f9a8971eb05020e5ee94d8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.5 || ^11.0 || ^12.5",
+                "terminal42/contao-build-tools": "@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Toflar\\FastSet\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yanick Witschi",
+                    "email": "yanick.witschi@terminal42.ch"
+                }
+            ],
+            "description": "Provides the means to create memory-efficient precompiled sets with very fast fingerprint lookups",
+            "keywords": [
+                "Fingerprint",
+                "binary",
+                "dictionary",
+                "hash",
+                "lookup",
+                "memory",
+                "set"
+            ],
+            "support": {
+                "issues": "https://github.com/Toflar/FastSet/issues",
+                "source": "https://github.com/Toflar/FastSet/tree/1.0.1"
+            },
+            "time": "2026-06-02T13:14:21+00:00"
+        },
+        {
             "name": "toflar/state-set-index",
             "version": "3.3.0",
             "source": {
@@ -1259,16 +1325,16 @@
         },
         {
             "name": "php-cs-fixer/shim",
-            "version": "v3.95.17",
+            "version": "v3.95.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/shim.git",
-                "reference": "fe9462e0b3e59b33ee076f6eda626b474b8cf363"
+                "reference": "9b815f2ba5c581faaaec1386dcda4c16d511e6bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/shim/zipball/fe9462e0b3e59b33ee076f6eda626b474b8cf363",
-                "reference": "fe9462e0b3e59b33ee076f6eda626b474b8cf363",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/shim/zipball/9b815f2ba5c581faaaec1386dcda4c16d511e6bb",
+                "reference": "9b815f2ba5c581faaaec1386dcda4c16d511e6bb",
                 "shasum": ""
             },
             "require": {
@@ -1305,9 +1371,9 @@
             "description": "A tool to automatically fix PHP code style",
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/shim/issues",
-                "source": "https://github.com/PHP-CS-Fixer/shim/tree/v3.95.17"
+                "source": "https://github.com/PHP-CS-Fixer/shim/tree/v3.95.18"
             },
-            "time": "2026-07-24T13:55:04+00:00"
+            "time": "2026-07-30T15:46:28+00:00"
         },
         {
             "name": "phpstan/extension-installer",
@@ -1363,8 +1429,8 @@
             "version": "2.2.x-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e6d7b5bd314f434341b3e4c9b560265069fa33b1",
-                "reference": "e6d7b5bd314f434341b3e4c9b560265069fa33b1",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/44decdf4af42111c9ff8a8edc51a0d3b7ce402ae",
+                "reference": "44decdf4af42111c9ff8a8edc51a0d3b7ce402ae",
                 "shasum": ""
             },
             "require": {
@@ -1421,7 +1487,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-07-27T11:35:48+00:00"
+            "time": "2026-08-01T14:43:45+00:00"
         },
         {
             "name": "phpstan/phpstan-phpunit",
@@ -1809,12 +1875,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "8e86ffaede8e76e013033e096cdc8ab07160593d"
+                "reference": "53e5fbb439499e05798ca7590296f75404734c5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/8e86ffaede8e76e013033e096cdc8ab07160593d",
-                "reference": "8e86ffaede8e76e013033e096cdc8ab07160593d",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/53e5fbb439499e05798ca7590296f75404734c5f",
+                "reference": "53e5fbb439499e05798ca7590296f75404734c5f",
                 "shasum": ""
             },
             "require": {
@@ -1894,20 +1960,20 @@
                     "type": "other"
                 }
             ],
-            "time": "2026-07-24T12:52:16+00:00"
+            "time": "2026-08-01T01:15:29+00:00"
         },
         {
             "name": "rector/rector",
-            "version": "2.5.8",
+            "version": "2.5.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "861c77fd2a6d45317a401f4e0b617f947e8b6f96"
+                "reference": "858b1fb95d94f658b54c01080bf7b6ae97274536"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/861c77fd2a6d45317a401f4e0b617f947e8b6f96",
-                "reference": "861c77fd2a6d45317a401f4e0b617f947e8b6f96",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/858b1fb95d94f658b54c01080bf7b6ae97274536",
+                "reference": "858b1fb95d94f658b54c01080bf7b6ae97274536",
                 "shasum": ""
             },
             "require": {
@@ -1946,7 +2012,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/2.5.8"
+                "source": "https://github.com/rectorphp/rector/tree/2.5.9"
             },
             "funding": [
                 {
@@ -1954,7 +2020,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-07-27T06:19:16+00:00"
+            "time": "2026-07-30T22:10:00+00:00"
         },
         {
             "name": "sebastian/cli-parser",
